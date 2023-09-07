@@ -23,6 +23,8 @@ html {
 body {
   font-family: 'Familjen Grotesk', sans-serif;
   background-color: var(--clr-white);
+  margin: 0;
+  padding: 0;
 }
 
 /* global css */
@@ -35,6 +37,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--clr-white);
 }
 
 li {
@@ -54,6 +57,69 @@ li {
   color: white;
   border: 2px solid var(--clr-white);
 }
+
+/* Custom CSS */
+
+/* Navbar */
+.navbar {
+  padding: 33px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-black);
+}
+
+.logo {
+  width: 210px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 25px 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 23px;
+    height: 2px;
+    background-color: var(--clr-white);
+    margin: 3px 0;
+  }
+}
+
 
 @media screen and (min-width: 576px) {}
 
