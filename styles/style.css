@@ -395,32 +395,3 @@ li {
     font-weight: bold;
   }
 }
-
-/* Footer */
-
-footer {
-  background-color: var(--clr-black);
-  color: var(--clr-grey);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer ul li {
-  display: inline-block;
-  margin: 64px 13px;
-
-  font-size: 13px;
-}
-
-@media (max-width: 768px) {
-  footer ul {
-    margin: 64px 0;
-    text-align: center;
-  }
-
-  footer ul li {
-    flex-wrap: wrap;
-    margin: 5px 6px;
-  }
-}
