@@ -29,7 +29,7 @@ html {
 
 body {
   font-family: 'Familjen Grotesk', sans-serif;
-  background-color: var(--clr-white);
+  background-color: var(--clr-black);
   margin: 0;
   padding: 0;
 }
@@ -46,10 +46,15 @@ li {
 
 /* Custom CSS */
 
+.container {
+  overflow: hidden;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   width: 100%;
   background-color: transparent;
@@ -117,6 +122,22 @@ li {
 
   .menu {
     display: none;
+    flex-direction: column;
+    background-color: var(--clr-black);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .menu ul {
+    max-width: 300px;
+  }
+
+  .menu ul li {
+    margin: 10px 0;
+    text-align: center;
   }
 
   .hamburger {
@@ -335,8 +356,9 @@ li {
   }
 
   .section-a .section-text {
+    width: 100vw;
     bottom: -4%;
-    right: -44%;
+    right: -56%;
     transform: translate(-50%, -50%);
   }
 
@@ -348,8 +370,9 @@ li {
   }
 
   .section-c .section-text {
+    width: 100vw;
     bottom: -4%;
-    right: -42.5%;
+    right: -57%;
     transform: translate(-50%, -50%);
   }
 
